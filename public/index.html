@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Visa direct pay</title>
+    <style>
+      label{display: block;}
+      input{border: 1px solid orange;}
+    </style>
+  </head>
+  <body>
+    <div>
+      Payment form
+      <form method="POST" action="/do">
+	<label>Sender name</label>
+	<input type="text" name="sender_name">
+	<label>Sender account number</label>
+	<input type="text" name="sender_account_number">
+	<label>Currency</label>
+	<select name="currency">
+	  <option value="USD">USD</option>
+	  <option value="INR">INR</option>
+	</select>
+	<label>Recipient card number</label>
+	<input type="text" name="recipient_card_number">
+	<label>Amount</label>
+	<input type="text" name="amount">
+	<input type="submit" name="submit" value="Pay now">
+      </form>
+    </div>
+  </body>
+</html>
